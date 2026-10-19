@@ -1,6 +1,8 @@
 # Kantahulay (Kantahang Mahusay)
 
 > Offline-first videoke / karaoke player for Android, designed for low-friction home gatherings, road trips, and parties with zero internet connection required.
+>
+> **Note on Screen Orientation:** Best used in **Landscape mode**. In portrait mode, longer lyric lines may truncate or appear incomplete.
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Android-green.svg)](https://developer.android.com)
