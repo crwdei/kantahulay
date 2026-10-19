@@ -1,0 +1,106 @@
+# THIRD-PARTY SOFTWARE NOTICES AND LICENSES
+
+Kantahulay incorporates or interfaces with several open-source software libraries, components, and specifications. This document provides attribution and licensing terms for each third-party component.
+
+---
+
+## 1. FluidSynth v2.6.1
+
+* **License:** GNU Lesser General Public License, Version 2.1 (LGPL-2.1)
+* **Copyright:** (C) 2003-2024 Peter Hanappe, Conrad Berhörster, Antoine Schmitt, Pedro Lopez-Cabanillas, and others.
+* **Source Code:** https://github.com/FluidSynth/fluidsynth/releases/tag/v2.6.1
+* **Dynamic Linking Architecture:**
+  FluidSynth is compiled as a standalone dynamic shared library (`libfluidsynth.so`), loaded dynamically by Android's dynamic linker at runtime, and interfaced via standard C API bindings. FluidSynth is **not** statically linked into the application or native bridge binaries.
+  In compliance with Section 6 of the LGPL v2.1, users are free to modify and recompile `libfluidsynth.so` and replace it in the application packaging without requiring modifications to the proprietary or MIT-licensed Kantahulay application code.
+
+### GNU LESSER GENERAL PUBLIC LICENSE
+Version 2.1, February 1999
+
+Copyright (C) 1991, 1999 Free Software Foundation, Inc.
+51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+Everyone is permitted to copy and distribute verbatim copies
+of this license document, but changing it is not allowed.
+
+[For full LGPL-2.1 text, visit: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt]
+
+---
+
+## 2. Oboe v1.9.0
+
+* **License:** Apache License, Version 2.0
+* **Copyright:** Copyright (C) Google LLC
+* **Repository:** https://github.com/google/oboe
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at:
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+---
+
+## 3. TinySoundFont (TSF)
+
+* **License:** MIT License
+* **Copyright:** Copyright (c) 2017-2024 Bernhard Schelling
+* **Repository:** https://github.com/schellingb/TinySoundFont
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+---
+
+## 4. GeneralUser GS SoundFont
+
+* **Author:** S. Christian Collins
+* **Website:** https://schristiancollins.com/generaluser.php
+* **Notice:**
+  GeneralUser GS is an independently created SoundFont sound bank. It is NOT distributed with this repository. Users can download and install it for personal use via `python scripts/download_soundfont.py` or manually place an SF2 SoundFont in the assets directory.
+  Distribution of modified versions requires prior written permission from S. Christian Collins. See official website for licensing terms.
+
+---
+
+## 5. React Native
+
+* **License:** MIT License
+* **Copyright:** Copyright (c) Meta Platforms, Inc. and affiliates.
+* **Repository:** https://github.com/facebook/react-native
+
+---
+
+## 6. Expo SDK & Expo Modules Core
+
+* **License:** MIT License
+* **Copyright:** Copyright (c) 650 Industries, Inc.
+* **Repository:** https://github.com/expo/expo
+
+---
+
+## 7. react-native-safe-area-context
+
+* **License:** MIT License
+* **Copyright:** Copyright (c) 2019 Janic Duplessis
+* **Repository:** https://github.com/th3rdwave/react-native-safe-area-context
+
+---
+
+## 8. SQLite / expo-sqlite
+
+* **License:** Public Domain / MIT
+* **Website:** https://www.sqlite.org/

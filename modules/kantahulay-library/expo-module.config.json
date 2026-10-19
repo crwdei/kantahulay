@@ -1,0 +1,7 @@
+{
+  "name": "kantahulay-library",
+  "platforms": ["android"],
+  "android": {
+    "modules": ["com.kantahulay.library.BundledLibraryModule"]
+  }
+}

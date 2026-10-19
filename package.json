@@ -1,0 +1,40 @@
+{
+  "name": "kantahulay",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crwdei/kantahulay.git"
+  },
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "test": "jest",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "ios": "expo run:ios"
+  },
+  "dependencies": {
+    "expo": "~54.0.37",
+    "expo-dev-client": "~6.0.21",
+    "expo-sqlite": "~16.0.10",
+    "expo-status-bar": "~3.0.9",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-safe-area-context": "~5.6.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/jest": "^29.5.14",
+    "@types/react": "~19.1.0",
+    "babel-preset-expo": "~54.0.12",
+    "better-sqlite3": "^13.0.3",
+    "eslint": "^9.39.5",
+    "eslint-config-expo": "^58.0.4",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "~5.8.0"
+  },
+  "private": true
+}

@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Expo & React Native Build Artifacts
+.expo/
+dist/
+web-build/
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+.metro-health-check*
+
+# Native Continuous Generation (prebuild output)
+/android/
+/ios/
+.cxx/
+*.ninja*
+
+# Song Packs & Media Libraries (Only sample-pack is committed)
+build/
+*.kpak
+!sample-pack/songs.kpak
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+!sample-pack/catalog.sqlite
+
+# SoundFonts (Exclude copyrighted / large soundfont binaries)
+*.sf2
+*.sf3
+*.sfz
+
+# Keystores & Signing Secrets
+*.jks
+*.keystore
+keystore.properties
+local.properties
+.env
+.env.*
+!.env.example
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS Metadata
+.DS_Store
+Thumbs.db

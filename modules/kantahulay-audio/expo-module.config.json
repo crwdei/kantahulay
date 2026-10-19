@@ -1,0 +1,7 @@
+{
+  "name": "kantahulay-audio",
+  "platforms": ["android"],
+  "android": {
+    "modules": ["com.kantahulay.audio.KantahulayAudioModule"]
+  }
+}
