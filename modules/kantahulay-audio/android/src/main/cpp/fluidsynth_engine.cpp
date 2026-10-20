@@ -170,6 +170,15 @@ void FluidSynthEngine::reset_channels() {
     if (!synth_) return;
     fluid_synth_all_sounds_off(synth_, -1);
 
+    // Configure 16 independent basic-channel groups (Mode 3: Omni Off, Poly).
+    // In stock FluidSynth, a single basic channel (ch 0) covers all 16 channels;
+    // CC 124 (Omni Off) or CC 126 (Mono On) on ch 0 shrinks the group to 1 channel,
+    // disabling channels 1..15 and dropping all accompaniment notes.
+    fluid_synth_reset_basic_channel(synth_, -1);
+    for (int ch = 0; ch < 16; ++ch) {
+        fluid_synth_set_basic_channel(synth_, ch, FLUID_CHANNEL_MODE_OMNIOFF_POLY, 1);
+    }
+
     for (int ch = 0; ch < 16; ++ch) {
         fluid_synth_cc(synth_, ch, 121, 0); // CC 121 Reset All Controllers
         fluid_synth_cc(synth_, ch, 64, 0);  // Sustain = 0

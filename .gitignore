@@ -19,7 +19,10 @@ yarn-error.*
 .cxx/
 *.ninja*
 
-# Song Packs & Media Libraries (Only sample-pack is committed)
+# Local workspace and reports
+WORKSPACE/
+47997 MIDI FILES/
+pngs/
 build/
 *.kpak
 !sample-pack/songs.kpak
@@ -28,6 +31,10 @@ build/
 *.sqlite-wal
 *.sqlite-shm
 !sample-pack/catalog.sqlite
+
+# Build Manifests (Keep sample-pack manifest, ignore large catalog manifests)
+bundle_manifest.json
+!sample-pack/bundle_manifest.json
 
 # SoundFonts (Exclude copyrighted / large soundfont binaries)
 *.sf2

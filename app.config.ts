@@ -17,6 +17,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     },
     android: {
       package: 'com.kantahulay.app',
+      versionCode: 4,
       adaptiveIcon: {
         backgroundColor: '#0B0D12',
         foregroundImage: './assets/android-icon-foreground.png',
